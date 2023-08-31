@@ -29,6 +29,14 @@ function CheckOut() {
     return total;
   };
 
+  async function deleteItem(id) {
+    let res = await fetch(`http://localhost:5000/Product/${id}`, {
+      method: "DELETE",
+    });
+    let data = await res.json();
+    fetchData();
+  }
+
   return (
     <div>
       <h1>Cart</h1>
@@ -42,6 +50,10 @@ function CheckOut() {
                   <li key={el.id}>
                     {el.Title} - ${el.DiscountPrice}
                   </li>
+                  <button onClick={() => {
+                  deleteItem(el.id);
+                }}
+              >Delete Item</button>
                 </ul>
               </div>
             </div>
