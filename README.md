@@ -12,7 +12,7 @@ Welcome to CodexJewels, your ultimate destination for exquisite jewelry shopping
 - [Technologies Used](#technologies-used)
 - [File Structure](#file-structure)
 - [Contributing](#contributing)
-- [Collaborators](#collaborators)
+- [Contributors](#contributors)
 - [License](#license)
 
 ## Features
@@ -84,12 +84,14 @@ Codex-Jewels/
 
 We welcome contributions! Should you identify any issues or have ideas for improvement, please submit a pull request. Kindly adhere to the existing coding style and guidelines.
 
-## Collaborators
+## Contributors
 
-- @yogita-2708.
-- @bikashswain009.
-- @anusiktamohanty20.
-- @stutibiswal01
+We would like to acknowledge and thank the following individuals for their contributions to this project:
+
+- [Bikash Swain](https://github.com/bikashswain009)
+- [Anusikta Mohanty](https://github.com/AnusiktaMohanty20)
+- [Kanreddy Yogita](https://github.com/yogita-2708)
+- [Stuti Biswal](https://github.com/stutibiswal01)
 
 ## License
 
