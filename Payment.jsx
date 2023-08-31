@@ -8,7 +8,8 @@ function Payment() {
     expiryDate: "",
     cvv: "",
   });
-  const [paymentSuccess, setPaymentSuccess] = useState(false); // New state
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const [ordered,setOrdered] = useState(false);
 
   const handlePaymentMethodChange = (event) => {
     setPaymentMethod(event.target.value);
@@ -24,13 +25,33 @@ function Payment() {
 
   const handlePayment = () => {
     if (paymentMethod === "card") {
-      console.log("Processing card payment:", cardDetails);
-      setPaymentSuccess(false);
+      if (
+        cardDetails.cardNumber &&
+        cardDetails.cardHolderName &&
+        cardDetails.expiryDate &&
+        cardDetails.cvv
+      ){
+      //console.log("Processing card payment:", cardDetails);
+      setPaymentSuccess(true);
+      }
+      else{
+        alert('Please fill all the fields');
+      }
     } else if (paymentMethod === "cod") {
       console.log("Cash on delivery selected");
-      setPaymentSuccess(true);
+      setPaymentSuccess(false);
     }
+    setOrdered(true);
   };
+
+  const handleOrder = () => {
+    if(ordered){
+    window.location.href = '/order';
+    }
+    else{
+      alert('Please select payment method')
+    }
+  }
 
   return (
     <div>
@@ -54,6 +75,7 @@ function Payment() {
             placeholder="Card Number"
             value={cardDetails.cardNumber}
             onChange={handleCardDetailsChange}
+            required = {true}
           />
           <input
             type="text"
@@ -61,6 +83,7 @@ function Payment() {
             placeholder="cardHolderName"
             value={cardDetails.cardHolderName}
             onChange={handleCardDetailsChange}
+            required
           />
           <input
             type="date"
@@ -68,6 +91,7 @@ function Payment() {
             placeholder="expiryDate"
             value={cardDetails.expiryDate}
             onChange={handleCardDetailsChange}
+            required
           />
           <input
             type="number"
@@ -75,14 +99,17 @@ function Payment() {
             placeholder="cvv"
             value={cardDetails.cvv}
             onChange={handleCardDetailsChange}
+            required
           />
         </div>
       )}
       <button onClick={handlePayment}>Make Payment</button>
       {paymentSuccess && (
-        <p>Payment Successful Order will be delivered within 5 days</p>
+        <p>Payment Successful, Order will be delivered within 3 days</p>
       )}
-      {!paymentSuccess && <p>Order will be delivered within 7 days</p>}
+      {!paymentSuccess && <p>Card payment will deliver your ordered items faster</p>}
+      <br />
+      <button onClick={handleOrder}>Order Details</button>
     </div>
   );
 }
