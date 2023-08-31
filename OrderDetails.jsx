@@ -21,6 +21,13 @@ function OrderDetails() {
   }, []);
 
   async function orderCancel(id) {
+    const confirmed = window.confirm(
+      "Are you sure you want to cancel this ordered item?"
+    );
+
+    if (!confirmed) {
+      return;
+    }
     try {
       let res = await fetch(`http://localhost:5000/Product/${id}`, {
         method: "DELETE",
