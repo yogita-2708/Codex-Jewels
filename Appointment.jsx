@@ -13,7 +13,6 @@ import Navbar from "../Pages/Navbar";
 const Appointment = () => {
     const [display, setDisplay] = useState("none");
     return(<>
-        <Navbar/> 
         <div>
             <div className="mainDiv">
                 <img src="https://www.avtaara.com/wp-content/uploads/2020/04/5e8b141d1c67e.png.webp" alt="" />
@@ -32,15 +31,15 @@ const Appointment = () => {
             >
             <AlertIcon boxSize='40px' mr={0} />
             <AlertTitle mt={4} mb={1} fontSize='lg'>
-                Application submitted!
+                Your Pin is Recorded!
             </AlertTitle>
             <AlertDescription maxWidth='sm'>
-                Thanks for submitting your application. Our team will get back to you soon.
+                Thanks for submitting your Pin. Our team will get back to you soon.
             </AlertDescription>
         </Alert>
             </div>
         </div>
-        <div className="footer">
+        <div className="footer1">
             <Footer/>
         </div>
         
