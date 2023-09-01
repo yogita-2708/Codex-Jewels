@@ -1,0 +1,128 @@
+.Icon-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    line-height: 24px;
+}
+.divIcon{
+    height: 120px; 
+    
+}
+.foot-icon{
+    margin-top: -70px;
+}
+.child-h2{
+    font-family: Arial;
+    font-size: 1.4 rem;
+    color: rgb(35,21,53);
+    padding: 4px;
+    margin-bottom: 10px;
+}
+.sub-icon{
+    list-style: none;
+    text-align: left;
+    color: #00000093;
+    line-height: 24px;
+    font-size: 15px;
+    margin-left: 100px;
+}
+.link{
+    color: rgba(214, 11, 193, 0.879);
+}
+.sub-list-1{
+    text-align: left;
+    margin-top: 1px;
+}
+.sub-list-2{
+    text-align: left;
+    margin-top: -100px;
+    font-size: 14px;
+}
+.sub-list-3{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.sub-list{
+    list-style: none;
+    text-align: left;
+    color: #00000093;
+    line-height: 24px;
+    font-size: 15px;
+    margin-left: 4px;
+}
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: left;
+   
+}
+.sub-button{
+    margin-top: -25px;
+}
+
+.child-h1{
+    font-family: Arial;
+    font-size: 1.4 rem;
+    color: rgb(35,21,53);
+    padding: 4px;
+}
+.child-footer{
+    background-color: rgb(246, 239, 246);
+    height: 600px;
+}
+.play-image{
+    margin-bottom: 36px;
+
+}
+.app-image{
+    margin-bottom: 37px;
+    margin-left: -5px;
+}
+.play{
+    margin-top: -40px;
+}
+.download{
+    border: 2px solid gray;
+    border-radius: 1rem;
+    height: 90px;
+    width: 430px;
+    padding-top: 20px;
+    margin-left: -165px;
+    margin-top: 10px;
+}
+
+.download-list{
+    display: flex;
+    list-style: none;
+    gap : 10px;
+    margin-left: 40px;
+    border-style: outset;
+    border: blue;
+}
+.copyright{
+    text-align: left;
+    margin-left: 100px;
+    font-size: x-small;
+    margin-top: -30px;
+}
+.pay-list{
+    display: flex;
+    list-style: none;
+    margin-left: 550px;
+    margin-top: -70px;
+    gap: 15px;
+}
+.last-div-1{
+    display: flex;
+}
+.pay{
+    width: 50px;
+}
+.list-social{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-left: 100px
+}
