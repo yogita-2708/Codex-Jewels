@@ -10,7 +10,6 @@ Welcome to CodexJewels, your ultimate destination for exquisite jewelry shopping
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [File Structure](#file-structure)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
 - [License](#license)
@@ -61,24 +60,6 @@ Welcome to CodexJewels, your ultimate destination for exquisite jewelry shopping
 - JavaScript
 - JSON Server (for backend data simulation)
 - Payment Gateway Integration 
-
-## File Structure
-
-```
-Codex-Jewels/
-├── public/
-├── src/
-│   ├── components/
-│   ├── images/
-│   ├── pages/
-│   ├── App.jsx
-│   ├── index.js
-│   └── ...
-├── db.json
-├── package.json
-├── README.md
-└── ...
-```
 
 ## Contributing
 
