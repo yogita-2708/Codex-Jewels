@@ -7,8 +7,6 @@ Welcome to CodexJewels, your ultimate destination for exquisite jewelry shopping
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
@@ -25,32 +23,6 @@ Welcome to CodexJewels, your ultimate destination for exquisite jewelry shopping
 - **Shopping Cart**: Conveniently add items to your cart while exploring products, ensuring a smooth shopping experience.
 
 - **Checkout**: Seamlessly proceed through the checkout process, complete with an integrated payment gateway for secure transactions.
-
-## Installation
-
-1. Clone the repository to your local machine:
-   ```
-   git clone https://github.com/your-username/Codex-Jewels.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd Codex-Jewels
-   ```
-
-3. Install the required dependencies:
-   ```
-   npm install
-   ```
-
-## Usage
-
-1. Launch the development server:
-   ```
-   npm start
-   ```
-
-2. Open your preferred web browser and visit `http://localhost:3000` to access the CodexJewels app.
 
 ## Technologies Used
 
@@ -80,4 +52,4 @@ This project operates under the [MIT License](LICENSE).
 
 ---
 
-We hope you enjoy using the SparklingGems Ecommerce App as much as we enjoyed developing it. Happy shopping!😊
+We hope you enjoy using the CodexJewels Ecommerce App as much as we enjoyed developing it. Happy shopping!😊
